@@ -34,7 +34,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/myweb:latest
+          tags: ghcr.io/${{ github.repository_owner }}/myweb:${{ github.sha }} | cut -c1-7
 
       # 4️⃣ Update deployment.yaml with new image tag
       - name: Update deployment.yaml image
