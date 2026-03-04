@@ -9,17 +9,16 @@ spec:
   selector:
     matchLabels:
       app: nginx
-  strategy: {}
   template:
     metadata:
       labels:
         app: nginx
     spec:
       containers:
-      - image: ghcr.io/akash3069/myweb:79f041c
-        name: nginx
+        - name: nginx
+          image: ghcr.io/akash3069/myweb:79f041c
+          ports:
+            - containerPort: 80
       imagePullSecrets:
         - name: ghcr-secret
-        ports:
-        - containerPort: 80
 
