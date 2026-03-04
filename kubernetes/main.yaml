@@ -16,7 +16,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: akash550/myimg
+      - image: ghcr.io/akash3069/myweb:latest
         name: nginx
         ports:
         - containerPort: 80
