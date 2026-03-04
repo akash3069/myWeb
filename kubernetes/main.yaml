@@ -18,6 +18,8 @@ spec:
       containers:
       - image: ghcr.io/akash3069/myweb:79f041c
         name: nginx
+      imagePullSecrets:
+        - name: ghcr-secret
         ports:
         - containerPort: 80
 
