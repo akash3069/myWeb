@@ -39,7 +39,7 @@ jobs:
       # 4️⃣ Update deployment.yaml with new image tag
       - name: Update deployment.yaml image
         run: |
-          TAG=${GITHUB_SHA::7}
+          TAG=${GITHUB_SHA}
           sed -i "s|image: .*|image: ghcr.io/${{ github.repository_owner }}/myweb:$TAG|g" kubernetes/main.yaml
 
       # 5️⃣ Commit updated deployment.yaml
