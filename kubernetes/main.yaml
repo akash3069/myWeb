@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: ghcr.io/akash3069/myweb:9c2c5fed9ecd11a57e019893384d395d6ca5180b
+          image: ghcr.io/akash3069/myweb:ec09a013cead0a2578d2000ed0b506b2557e8ea5
           ports:
             - containerPort: 80
       imagePullSecrets:
